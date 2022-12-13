@@ -1,3 +1,18 @@
+:root {
+    --color-primary-500: hsl(171, 66%, 44%);
+    --color-primary-600: hsl(233, 100%, 69%);
+
+    --color-neutral-900: hsl(210, 10%, 33%);
+    --color-neutral-400: hsl(201, 11%, 66%);
+
+    --fs-small: 18px;
+
+    --ff-neutral: 'Bai Jamjuree', sans-serif;
+
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+}
+
 /* Resets */
 
 /* Box sizing rules */
@@ -73,4 +88,46 @@ select {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+/* general styling */
+
+main {
+    font-family: var(--ff-neutral);
+    color: var(--color-neutral-900);
+    font-weight: var(--fw-regular);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 5rem;
+    background: no-repeat url("images/bg-header-mobile.png") ;
+}
+
+p {
+    color: var(--color-neutral-400);
+}
+
+.section-discription {
+    margin-bottom: 2rem;
+}
+
+header{
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+    place-items: center;
+}
+
+header h1 {
+    line-height:normal;
+}
+
+.two-buttons {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
 }
