@@ -91,20 +91,28 @@ select {
 }
 
 /* general styling */
+body {
+    background: no-repeat url("images/bg-header-mobile.png") ;
+}
+
 
 main {
     font-family: var(--ff-neutral);
     color: var(--color-neutral-900);
     font-weight: var(--fw-regular);
     min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    max-width: 1000px;
+    display: grid;
+    margin: auto;
     padding: 1rem;
-    padding-top: 5rem;
-    background: no-repeat url("images/bg-header-mobile.png") ;
+    padding-top: 8rem;
+    gap: 10rem;
+}
+
+@media (min-width: 40em) {
+    body {
+        background: no-repeat url("images/bg-header-desktop.png");
+    }
 }
 
 p {
@@ -115,11 +123,20 @@ p {
     margin-bottom: 2rem;
 }
 
+/* Header */
+
 header{
+    max-width: 600px;
     display: grid;
     gap: 1.5rem;
     text-align: center;
-    place-items: center;
+    margin: auto;
+    
+}
+
+header img {
+    max-width: 7rem;
+    margin: auto;
 }
 
 header h1 {
@@ -129,5 +146,33 @@ header h1 {
 .two-buttons {
     width: 100%;
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.two-buttons button{
+    border: 0;
+    color: white;
+    border-radius: 5rem;
+    height: 3rem;
+}
+
+.ios-button {
+    background-color: var(--color-primary-500);
+    box-shadow: var(--color-primary-500) 0px 2px 8px 0px;
+}
+
+.mac-button {
+    background-color: var(--color-primary-600);
+    box-shadow: var(--color-primary-600) 0px 2px 8px 0px;
+}
+
+@media (min-width: 40em) {
+    .two-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .two-buttons button{
+        width: 12rem;
+    }
 }
