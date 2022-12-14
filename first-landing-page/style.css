@@ -328,6 +328,7 @@ footer {
     }
     .footer-nav {
         columns: 1;
+        padding: 2rem 0;
     }
     .footer-nav li {
         padding-bottom: 1rem;
