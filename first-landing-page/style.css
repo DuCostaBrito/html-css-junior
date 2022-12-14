@@ -282,6 +282,9 @@ p {
 footer {
     background: hsl(203, 19%, 92%);
     padding: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .footer-box {
