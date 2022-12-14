@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
@@ -57,38 +59,42 @@
     </section>
 
     <section class="connected">
-      <h2>Access Clipboard anywhere</h2>
-      <p class="section-discription">  Whether you're on the go, or at your computer, you can access all your Clipboard
-        snippets in a few simple clicks.
-      </p>
-      <img src="images/image-devices.png" alt="">
+      <div class="connected-box | container">
+        <h2 class="fs-650 fw-semi-bold">Access Clipboard anywhere</h2>
+        <p class="section-discription"> Whether you're on the go, or at your computer, you can access all your Clipboard
+          snippets in a few simple clicks.
+        </p>
+        <img src="images/image-devices.png" alt="">
+      </div>
     </section>
 
     <section class="workflow">
-      <h2>Supercharge your workflow</h2>
-      <p class="section-discription">We've got the tools to boost your productivity.</p>
-      <div class="three-columns">
+      <div class="workflow-box | container">
+        <h2 class="fs-650 fw-semi-bold">Supercharge your workflow</h2>
+        <p class="section-discription">We've got the tools to boost your productivity.</p>
+      </div>
+      <div class="workflow-columns | even-columns">
         <div>
           <img src="images/icon-blacklist.svg" alt="">
-          <h3>Create blacklists</h3>
+          <h3 class="fs-600 fw-semi-bold">Create blacklists</h3>
           <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
         </div>
 
         <div>
           <img src="images/icon-text.svg" alt="">
-          <h3>Plain text snippets</h3>
+          <h3 class="fs-600 fw-semi-bold">Plain text snippets</h3>
           <p>Remove unwanted formatting from copied text for a consistent look.</p>
         </div>
 
         <div>
           <img src="images/icon-preview.svg" alt="">
-          <h3>Sneak preview</h3>
+          <h3 class="fs-600 fw-semi-bold">Sneak preview</h3>
           <p>Quick preview of all snippets on your Clipboard for easy access.</p>
         </div>
       </div>
     </section>
 
-    <section class="companies | five-columns">
+    <section class="companies | even-columns">
       <div class="google-logo">
         <img src="images/logo-google.png" alt="">
       </div>
@@ -111,31 +117,38 @@
     </section>
 
     <section class="clipboard">
-      <h2>Clipboard for iOS and Mac OS</h2>
-      <p class="section-discription">Available for free on the App Store. Download for Mac or iOS, sync with iCloud
-        and you're ready to start adding to your clipboard.
-      </p>
-      <div class="two-buttons">
-        <button class="ios-button">Download for iOS</button>
-        <button class="mac-button">Download for Mac</button>
+      <div class="clipboard-box | container">
+        <h2 class="fs-650 fw-semi-bold">Clipboard for iOS and Mac OS</h2>
+        <p class="section-discription">Available for free on the App Store. Download for Mac or iOS, sync with iCloud
+          and you're ready to start adding to your clipboard.
+        </p>
+        <div class="two-buttons">
+          <button class="ios-button">Download for iOS</button>
+          <button class="mac-button">Download for Mac</button>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <img src="images/logo.svg" alt="">
-    <ul>
-      <li>FAQs</li>
-      <li>Contact Us</li>
-      <li>Privacy Policy</li>
-      <li>Press Kit</li>
-      <li>Install Guide</li>
-    </ul>
-    <div class="social">
-      <img src="images/icon-facebook.svg" alt="facebook">
-      <img src="images/icon-twitter.svg" alt="facebook">
-      <img src="images/icon-instagram.svg" alt="facebook">
+    <div class="footer-box">
+      <img src="images/logo.svg" alt="">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Press Kit</a></li>
+          <li><a href="">Install Guide</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <img src="images/icon-facebook.svg" alt="facebook">
+        <img src="images/icon-twitter.svg" alt="facebook">
+        <img src="images/icon-instagram.svg" alt="facebook">
+      </div>
     </div>
+
   </footer>
 </body>
 
