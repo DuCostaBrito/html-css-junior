@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <div class="card">
+      <header class="container">
+        <div class="flex | headerbox">
+          <div class="fc-100">
+            My balance
+            <p class="fs-700">$921.48</p>
+          </div>
+          <div class="flex | circles">
+            <div class="white"></div>
+            <div class="black"></div>
+          </div>
+        </div>
+      </header>
+      <main class="container">
+        <h1 class="fw-bold fs-700">Spending - Last 7 days</h1>
+          <ul class="fc-600 | chart">
+            <li>
+              <span style="height:5%" title="mon"></span>
+            </li>
+            <li>
+              <span style="height:70%" title="tue"></span>
+            </li>
+            <li>
+              <span style="height:50%" title="wed"></span>
+            </li>
+            <li>
+              <span style="height:15%" title="thu"></span>
+            </li>
+            <li>
+              <span style="height:15%" title="fri"></span>
+            </li>
+            <li>
+              <span style="height:15%" title="sat"></span>
+            </li>
+            <li>
+              <span style="height:15%" title="sun"></span>
+            </li>
+          </ul>    
+        <hr/>
+        <div class="flex">
+          <div>
+            <h2 class="fc-600">Total this month</h2>
+            <p class="fw-bold fs-700">$478.33</p>
+          </div>
+          <div>
+            <p class="fw-bold">+2.4%</p>
+            <p class="fc-600">from last month</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
