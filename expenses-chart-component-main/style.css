@@ -96,6 +96,7 @@ body {
   font-family: var(--ff-neutral);
   font-weight: var(--fw-regular);
   font-size: 16px;
+  padding: 1rem;
 }
 
 .card {
@@ -138,18 +139,13 @@ main {
   background-color: var(--color-neutral-100);
 }
 
+/* chart */
 .chart {
   display: table;
   table-layout: fixed;
 
-  width: 60%;
-  max-width: 700px;
-  height: 200px;
-  margin: 0 auto;
-
-  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
-  background-size: 100% 50px;
-  background-position: left top;
+  width: 100%;
+  max-width: 400px;
 }
 
 li {
@@ -160,11 +156,57 @@ li {
 }
 
 span {
-  margin: 0 1em;
+  margin: 0 .5em;
   display: block;
-  background: var(--color-primary-500);
+  height: attr(data-height);
+  background-color: var(--color-primary-500);
+  border-radius: .25rem;
 }
 
+span:hover{
+  background-color: rgba(118, 181, 188, 0.3);
+}
+
+span:hover::before{
+  color: var(--color-neutral-100);
+  content: attr(data-spent);
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: var(--color-neutral-900);
+  padding: 5px;
+  border-radius: .25rem;
+}
+
+span::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  padding: 5px 1em 0;
+  display: block;
+  text-align: center;
+  content: attr(title);
+}
+
+hr{
+  margin: 3rem 0 2rem 0;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid var(--color-neutral-300);
+}
+
+/* footer */
+.footer{
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.end{
+  text-align: end;
+}
 
 /* helpers */
 .container {
@@ -195,6 +237,10 @@ span {
 
 .fs-700 {
   font-size: var(--fs-700);
+}
+
+.fs-800 {
+  font-size: var(--fs-800);
 }
 
 .grid {
